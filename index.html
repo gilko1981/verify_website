@@ -73,6 +73,43 @@
       line-height: 1.2;
       margin: 0;
     }
+    .CHARGE-section {
+      position: absolute;
+      top: 66vh;
+      left: 54px;
+      max-width: 500px;
+    }
+    .CHARGE-section p {
+      margin-bottom: 12px;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: -0.05em;
+    }
+    .charge-logo-container {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .charge-logo-container img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+    .charge-text {
+      display: flex;
+      flex-direction: column;
+    }
+    .charge-text .logo-text {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0;
+      line-height: 1;
+    }
+    .charge-text .sub-text {
+      font-size: 10px;
+      line-height: 1.2;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -87,17 +124,17 @@
   <div class="contact-section">
     <p>Excited to Connect with Us?</p>
     <p>Reach out at <span>hello@verifyhc.com</span>.</p>
-    <p>Stay informed on Health AI governance by following our educational hub:</p>
   </div>
 
-  <div class="logo-section">
-    <a href="https://www.linkedin.com/company/charge-health-ai" target="_blank">
+  <div class="CHARGE-section">
+    <p>Stay informed on Health AI governance by following our educational hub:</p>
+    <div class="charge-logo-container">
       <img src="logo.png" alt="CHARGE Logo">
-      <div>
+      <div class="charge-text">
         <p class="logo-text">CHARGE</p>
         <p class="sub-text">Center for Health AI Regulation,<br>Governance & Ethics</p>
       </div>
-    </a>
+    </div>
   </div>
 
 </body>
