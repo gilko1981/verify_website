@@ -30,9 +30,9 @@ p.tagline {
 }
 .contact-section {
   position: absolute;
-  top: 445px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   text-align: left;
   font-size: 16px;
   font-weight: 500;
@@ -68,9 +68,8 @@ p.tagline {
 }
 .CHARGE-section {
   position: absolute;
-  top: 70vh;
+  bottom: 50px;
   right: 78px;
-  left: auto;
   max-width: 500px;
   text-align: left;
 }
@@ -106,20 +105,20 @@ p.tagline {
   font-size: 10px;
   line-height: 1.2;
   margin: 0;
-} 
+}
 
 /* Contact form styles */
 #contactForm {
   width: 300px;
 }
 
-#contactForm input, 
+#contactForm input,
 #contactForm textarea {
   background-color: #222;
   color: white;
 }
 
-#contactForm input::placeholder, 
+#contactForm input::placeholder,
 #contactForm textarea::placeholder {
   color: #aaa;
 }
@@ -133,3 +132,4 @@ p.tagline {
   font-weight: 600;
   margin-top: 24px;
 }
+
