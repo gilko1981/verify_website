@@ -107,3 +107,29 @@ p.tagline {
   line-height: 1.2;
   margin: 0;
 } 
+
+/* Contact form styles */
+#contactForm {
+  width: 300px;
+}
+
+#contactForm input, 
+#contactForm textarea {
+  background-color: #222;
+  color: white;
+}
+
+#contactForm input::placeholder, 
+#contactForm textarea::placeholder {
+  color: #aaa;
+}
+
+#contactForm button:hover {
+  background-color: #ddd;
+}
+
+.contact-section h2 {
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  margin-top: 24px;
+}
