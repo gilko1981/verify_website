@@ -4,10 +4,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   color: white;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
 }
+
 h1 {
   font-size: 93px;
   font-weight: bold;
@@ -16,92 +17,116 @@ h1 {
   letter-spacing: -0.05em;
   margin: 0;
 }
+
 p.tagline {
   font-size: 32px;
   font-weight: 600;
   letter-spacing: -0.05em;
   line-height: 47px;
   margin: 0;
+  margin-bottom: 30px;
 }
+
 .main-container {
-  position: absolute;
+  position: relative;
   top: 106px;
   left: 54px;
+  max-width: 600px;
 }
+
 /* Position the contact-section directly below the tagline */
 .contact-section {
-  position: absolute;
-  top: 340px; /* Position directly below the tagline */
-  left: 54px; /* Align with the main-container */
+  position: relative;
+  margin-top: 20px;
   text-align: left;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.05em;
-  line-height: 12px;
+  line-height: 1.5;
 }
+
 .contact-section span {
   text-decoration: underline;
 }
+
+.contact-section h2 {
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
 .logo-section {
   position: absolute;
-  top: 580px;
+  bottom: 50px;
   right: 78px;
   display: flex;
   align-items: center;
   gap: 8px;
 }
+
 .logo-section img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
+
 .logo-section .logo-text {
   font-weight: bold;
   font-size: 18px;
   margin: 0;
   line-height: 1;
 }
+
 .logo-section .sub-text {
   font-size: 10px;
   line-height: 1.2;
   margin: 0;
 }
-/* Position the CHARGE-section on the right side below the contact-section */
+
+/* Position the CHARGE-section at the bottom right */
 .CHARGE-section {
-  position: absolute;
-  top: 650px; /* Position below the contact-section */
+  position: fixed;
+  bottom: 50px;
   right: 78px;
   max-width: 500px;
   text-align: left;
 }
+
 .CHARGE-section p {
   margin-bottom: 12px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.05em;
 }
+
 .charge-logo-container {
   display: flex;
   align-items: center;
   gap: 12px;
   justify-content: flex-start;
 }
+
 .charge-logo-container img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
+
 .charge-text {
   display: flex;
   flex-direction: column;
   align-items: left;
 }
+
 .charge-text .logo-text {
   font-weight: bold;
   font-size: 18px;
   margin: 0;
   line-height: 1;
 }
+
 .charge-text .sub-text {
   font-size: 10px;
   line-height: 1.2;
@@ -111,12 +136,18 @@ p.tagline {
 /* Contact form styles */
 #contactForm {
   width: 300px;
+  margin-bottom: 100px;
 }
 
 #contactForm input,
 #contactForm textarea {
   background-color: #222;
   color: white;
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  border: none;
 }
 
 #contactForm input::placeholder,
@@ -124,13 +155,20 @@ p.tagline {
   color: #aaa;
 }
 
-#contactForm button:hover {
-  background-color: #ddd;
+#contactForm textarea {
+  height: 80px;
 }
 
-.contact-section h2 {
-  letter-spacing: -0.05em;
-  font-weight: 600;
-  margin-top: 24px;
+#contactForm button {
+  padding: 8px 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contactForm button:hover {
+  background-color: #ddd;
 }
 
