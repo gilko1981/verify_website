@@ -1,112 +1,57 @@
-body {
+/* Base Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
-  color: white;
-  overflow-x: hidden;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
 }
 
-h1 {
+/* Body styling */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+
+  /* Use flex column layout for vertical stacking */
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1. Header at top, left-aligned */
+.header-section {
+  margin: 20px;
+  text-align: left;
+}
+
+.header-section h1 {
   font-size: 93px;
   font-weight: bold;
   font-style: italic;
   line-height: 93px;
   letter-spacing: -0.05em;
-  margin: 0;
+  margin-bottom: 0;
 }
 
-p.tagline {
+.header-section .tagline {
   font-size: 32px;
   font-weight: 600;
   letter-spacing: -0.05em;
   line-height: 47px;
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
-.main-container {
-  margin-left: 54px;
-  max-width: 600px;
-}
-
-/* Position the contact-section directly below the tagline */
+/* 2. Contact section: horizontally centered, below header */
 .contact-section {
-  margin-top: 20px;
-  text-align: left;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: -0.05em;
-  line-height: 1.5;
+  margin: 0 auto 30px; /* auto left/right to center horizontally */
+  text-align: center;  /* center text, optional */
+  width: 300px;        /* limit width so it centers nicely */
 }
-
-.contact-section p {
-  margin-bottom: 10px;
-}
-
-.contact-section h2 {
-  letter-spacing: -0.05em;
-  font-weight: 600;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-size: 24px;
-}
-
-/* Position the CHARGE-section at the bottom right */
-.CHARGE-section {
-  position: fixed;
-  bottom: 50px;
-  right: 78px;
-  max-width: 500px;
-  text-align: left;
-}
-
-.CHARGE-section p {
-  margin-bottom: 12px;
-  font-size: 16px;
-  font-weight: 500;
-  letter-spacing: -0.05em;
-}
-
-.charge-logo-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  justify-content: flex-start;
-}
-
-.charge-logo-container img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.charge-text {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-}
-
-.charge-text .logo-text {
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0;
-  line-height: 1;
-}
-
-.charge-text .sub-text {
-  font-size: 10px;
-  line-height: 1.2;
-  margin: 0;
-} 
 
 /* Contact form styles */
 #contactForm {
-  width: 300px;
+  display: flex;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
@@ -114,12 +59,10 @@ p.tagline {
 #contactForm textarea {
   background-color: #222;
   color: white;
-  width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
   border: none;
-  box-sizing: border-box;
 }
 
 #contactForm textarea {
@@ -139,4 +82,50 @@ p.tagline {
 
 #contactForm button:hover {
   background-color: #ddd;
+}
+
+/* 3. CHARGE-section: align right, below the contact section */
+.CHARGE-section {
+  margin: 0 20px 20px auto; /* push it to the right; bottom margin for spacing */
+  max-width: 500px;
+  text-align: right;
+}
+
+.CHARGE-section p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.charge-logo-container {
+  display: inline-flex; /* keeps logo + text together on the right */
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.charge-logo-container img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.charge-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.charge-text .logo-text {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
+
+.charge-text .sub-text {
+  font-size: 10px;
+  line-height: 1.2;
+  margin: 0;
 }
