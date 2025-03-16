@@ -7,6 +7,8 @@ body {
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -28,10 +30,7 @@ p.tagline {
 }
 
 .main-container {
-  position: absolute;
-  top: 50%;
-  left: 54px;
-  transform: translateY(-50%);
+  margin-left: 54px;
   max-width: 600px;
 }
 
@@ -103,7 +102,7 @@ p.tagline {
   font-size: 10px;
   line-height: 1.2;
   margin: 0;
-}
+} 
 
 /* Contact form styles */
 #contactForm {
@@ -111,7 +110,7 @@ p.tagline {
   margin-bottom: 20px;
 }
 
-#contactForm input,
+#contactForm input, 
 #contactForm textarea {
   background-color: #222;
   color: white;
@@ -141,4 +140,3 @@ p.tagline {
 #contactForm button:hover {
   background-color: #ddd;
 }
-
