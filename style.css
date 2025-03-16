@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+}
+h1 {
+  font-size: 93px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 93px;
+  letter-spacing: -0.05em;
+  margin: 0;
+}
+p.tagline {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 47px;
+  margin: 0;
+}
+.main-container {
+  position: absolute;
+  top: 106px;
+  left: 54px;
+}
+.contact-section {
+  position: absolute;
+  top: 445px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 12px;
+}
+.contact-section span {
+  text-decoration: underline;
+}
+.logo-section {
+  position: absolute;
+  top: 580px;
+  right: 78px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo-section img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.logo-section .logo-text {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
+.logo-section .sub-text {
+  font-size: 10px;
+  line-height: 1.2;
+  margin: 0;
+}
+.CHARGE-section {
+  position: absolute;
+  top: 70vh;
+  right: 78px;
+  left: auto;
+  max-width: 500px;
+  text-align: left;
+}
+.CHARGE-section p {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+.charge-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-start;
+}
+.charge-logo-container img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.charge-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.charge-text .logo-text {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  line-height: 1;
+}
+.charge-text .sub-text {
+  font-size: 10px;
+  line-height: 1.2;
+  margin: 0;
+} 
