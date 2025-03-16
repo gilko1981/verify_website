@@ -11,8 +11,6 @@ body {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
-
-  /* Use flex column layout for vertical stacking */
   display: flex;
   flex-direction: column;
 }
@@ -43,12 +41,11 @@ body {
 
 /* 2. Contact section: horizontally centered, below header */
 .contact-section {
-  margin: 0 auto 30px; /* auto left/right to center horizontally */
-  text-align: center;  /* center text, optional */
-  width: 300px;        /* limit width so it centers nicely */
+  margin: 0 auto 30px;
+  text-align: center;
+  width: 300px;
 }
 
-/* Contact form styles */
 #contactForm {
   display: flex;
   flex-direction: column;
@@ -84,11 +81,10 @@ body {
   background-color: #ddd;
 }
 
-/* 3. CHARGE-section: align right, below the contact section */
+/* 3. CHARGE Section */
 .CHARGE-section {
-  margin: 0 20px 20px auto; /* push it to the right; bottom margin for spacing */
+  margin: 0 40px 20px auto; /* increased right margin to 40px */
   max-width: 500px;
-  text-align: right;
 }
 
 .CHARGE-section p {
@@ -96,15 +92,17 @@ body {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.05em;
+  text-align: right;
 }
 
 .charge-logo-container {
-  display: inline-flex; /* keeps logo + text together on the right */
+  display: inline-flex;
   align-items: center;
   gap: 12px;
-  justify-content: flex-end;
+  justify-content: flex-start;  /* aligns the logo and text to the left */
 }
 
+/* Charge logo and text styling */
 .charge-logo-container img {
   width: 40px;
   height: 40px;
