@@ -28,19 +28,17 @@ p.tagline {
   top: 106px;
   left: 54px;
 }
+/* Change the contact-section positioning to be below the main-container */
 .contact-section {
   position: absolute;
-  top: 50%;
+  top: 300px; /* Position below the main-container */
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   text-align: left;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.05em;
   line-height: 12px;
-}
-.contact-section span {
-  text-decoration: underline;
 }
 .logo-section {
   position: absolute;
@@ -66,9 +64,10 @@ p.tagline {
   line-height: 1.2;
   margin: 0;
 }
+/* Keep the CHARGE-section on the right side and below the contact-section */
 .CHARGE-section {
   position: absolute;
-  bottom: 50px;
+  top: 650px; /* Position below the contact-section */
   right: 78px;
   max-width: 500px;
   text-align: left;
