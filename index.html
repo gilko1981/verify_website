@@ -25,32 +25,33 @@
     <div id="response" style="margin-top:10px; font-size:14px;"></div>
   </div>
 
-<!-- CHARGE Section -->
-<div class="CHARGE-section">
-  <!-- First line: paragraph text -->
-  <p>Stay informed on Health AI governance by following our educational hub:</p>
-  
-  <!-- Second line: logo on left, text block to the right of it -->
-  <div class="charge-line">
-    <img src="logo.png" alt="CHARGE Logo">
-    <div class="charge-text">
-      <p class="logo-text">CHARGE</p>
-      <p class="sub-text">Center for Health AI Regulation,<br>Governance & Ethics</p>
-    </div>
+  <!-- CHARGE Section -->
+  <div class="CHARGE-section">
+    <p>Stay informed on Health AI governance by following our educational hub:</p>
+    <a href="https://www.linkedin.com/company/charge-health-ai" target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
+      <div class="charge-logo-container">
+        <img src="logo.png" alt="CHARGE Logo">
+        <div class="charge-text">
+          <p class="logo-text">CHARGE</p>
+          <p class="sub-text">Center for Health AI Regulation,<br>Governance & Ethics</p>
+        </div>
+      </div>
+    </a>
   </div>
-</div>
 
   <script>
     document.getElementById('contactForm').addEventListener('submit', async function(e) {
       e.preventDefault();
       const formData = new FormData(this);
       const data = Object.fromEntries(formData.entries());
+  
       try {
-        const res = await fetch('/submit_contact', {
+        const res = await fetch('https://medical-ai-risk-739645289830.us-central1.run.app/submit_contact', {
           method: 'POST',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify(data)
         });
+  
         const result = await res.json();
         document.getElementById('response').innerText = result.message;
         if (res.ok) this.reset();
@@ -59,5 +60,6 @@
       }
     });
   </script>
+  
 </body>
 </html>
