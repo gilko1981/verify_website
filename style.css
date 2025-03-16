@@ -29,8 +29,9 @@ p.tagline {
 
 .main-container {
   position: absolute;
-  top: 106px;
+  top: 50%;
   left: 54px;
+  transform: translateY(-50%);
   max-width: 600px;
 }
 
@@ -102,15 +103,15 @@ p.tagline {
   font-size: 10px;
   line-height: 1.2;
   margin: 0;
-} 
+}
 
 /* Contact form styles */
 #contactForm {
   width: 300px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
-#contactForm input, 
+#contactForm input,
 #contactForm textarea {
   background-color: #222;
   color: white;
@@ -140,3 +141,4 @@ p.tagline {
 #contactForm button:hover {
   background-color: #ddd;
 }
+
