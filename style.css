@@ -83,36 +83,40 @@ body {
 
 /* 3. CHARGE Section */
 .CHARGE-section {
-  margin: 0 40px 20px auto; /* increased right margin to 40px */
+  /* Anchors the whole section to the right; adjust the right margin as needed */
+  margin: 0 40px 20px auto; 
   max-width: 500px;
+  text-align: left; /* Ensures the text inside is left-aligned */
 }
 
+/* First line of text (above the logo) */
 .CHARGE-section p {
   margin-bottom: 12px;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: -0.05em;
-  text-align: right;
 }
 
-.charge-logo-container {
-  display: inline-flex;
-  align-items: center;
+/* A flex container holding the logo and text block below the paragraph */
+.charge-line {
+  display: flex;
+  align-items: flex-start;
   gap: 12px;
-  justify-content: flex-start;  /* aligns the logo and text to the left */
 }
 
-/* Charge logo and text styling */
-.charge-logo-container img {
+/* Logo styling */
+.charge-line img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
 
+/* Text block to the right of the logo */
 .charge-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .charge-text .logo-text {
