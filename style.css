@@ -42,7 +42,7 @@ body {
 /* 2. Contact section: horizontally centered, below header */
 .contact-section {
   margin: 0 auto 30px;
-  text-align: center;
+  text-align: left;
   width: 300px;
 }
 
@@ -50,16 +50,23 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-section h2,
+.contact-section p {
+  text-align: left;
+  margin-bottom: 12px;
 }
 
 #contactForm input, 
 #contactForm textarea {
-  background-color: #222;
+  background-color: black;
   color: white;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 4px;
-  border: none;
+  border-radius: 8px;
+  border: 2px solid white;
 }
 
 #contactForm textarea {
@@ -72,13 +79,14 @@ body {
   background-color: white;
   color: black;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
+  font-weight: bold;
 }
 
 #contactForm button:hover {
-  background-color: #ddd;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* 3. CHARGE Section */
